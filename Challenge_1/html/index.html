@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>go go!</title>
-    <link href="prchall.css" rel="stylesheet" />
-  </head>
+  <head> </head>
+
   <body>
-    <h1>The Best Colors</h1>
-    <div class="container rposit">
-      <div class="row rposit">
-        <div class="box rposit left">
-          <div class="smallbox rposit top">
-            <h3 class="rposit top">Tomato</h3>
-            <h3 class="rposit top">#FF6347</h3>
-          </div>
+    <header>
+      <h1>Tell me about yourself! :></h1>
+    </header>
+    <form>
+      <main>
+        <div id="fn">
+          <label for="firstname">First name</label>
+          <input id="firstname" required placeholder="First name" type="text" />
         </div>
-        <div class="box rposit right">
-          <div class="smallbox rposit top">
-            <h3 class="rposit top">Teal</h3>
-            <h3 class="rposit top">#008080</h3>
-          </div>
+        <div id="ln">
+          <label for="lastname">Last name</label>
+          <input id="lastname" required placeholder="Last name" type="text" />
         </div>
-      </div>
-      <div class="row rposit">
-        <div class="box rposit left">
-          <div class="smallbox rposit top">
-            <h3 class="rposit top">Burlywood</h3>
-            <h3 class="rposit top">#DEB887</h3>
-          </div>
+        <div id="em">
+          <label for="email">Email</label>
+          <input id="email" required placeholder="Email" type="email" />
         </div>
-        <div class="box rposit right">
-          <div class="smallbox rposit top">
-          <h3 class="rposit top">Thistle</h3>
-          <h3 class="rposit top">#D7BFD7</h3>
+        <div id="un">
+          <label for="username">Username</label>
+          <input id="username" required placeholder="Username" type="text" />
         </div>
-      </div>
-    </div>
+        <div id="pw">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            required
+            placeholder="Password"
+            type="password"
+            minlength="10"
+          />
+        </div>
+        <div id="bd">
+          <label for="birthdate">Birth date</label>
+          <input required id="birthdate" type="date" />
+        </div>
+        <div id="happy">
+          <label for="howhappyareyou">How much do you love yourself?
+          </label>
+          <input id="howhappyareyou" type="range" list="tickmarks" />
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+          </datalist>
+        </div>
+        <div id="color">
+          <label for="favcolor">What is your fav. color?</label>
+          <input required id="favcolor" type="color" />
+        </div>
+      </main>
+      <input type="submit" value="Create Account" />
+    </form>
   </body>
 </html>
