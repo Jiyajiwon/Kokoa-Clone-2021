@@ -1,4 +1,4 @@
-# Kokoa-Clone-Coding
+# Kokoa-Clone-2021
 Nomad Coders Kokoa Clone Coding Challenge
 
 21.07.05.~21.07.19.
